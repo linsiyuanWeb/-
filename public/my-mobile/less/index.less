@@ -1,0 +1,83 @@
+@import 'base.less';
+
+// 主体部分样式
+
+// 轮播图
+#silder {
+    margin-top: 45px;
+}
+
+// 导航栏
+#nav {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    >div {
+        >div {
+            >a {
+                display: block;
+                width: 100%;
+
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 广告区域
+#banner {
+    img {
+        width: 100%;
+    }
+}
+
+// 商品专区
+#products {
+    margin-bottom: 50px;
+
+    // 品牌专区
+    .brand {
+        img {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            margin:5px 0; 
+        }
+    }
+
+    // 生活专区 女士专区 男士专区
+    .life,
+    .woman,
+    .man {
+
+        .items {
+            text-align: center;
+            box-shadow: 0 0 1px #ccc;
+            padding: 5px 0 10px;
+            margin: 5px;
+
+            .product-name {
+                font-size: 14px;
+                color: #666;
+            }
+
+            >div {
+                font-size: 12px;
+
+                >span {
+                    margin-right: 10px;
+                    color: red;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    
+}
