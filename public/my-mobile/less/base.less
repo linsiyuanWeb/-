@@ -1,7 +1,9 @@
 
 // 定义主体色
 @main-color: #006699;
-
+html,body{
+    height: 100%;
+}
 /* 清除浏览器的默认样式 */
 
 * {
@@ -88,17 +90,35 @@ h1 {
     background-color: @main-color;
     text-align: center;
     line-height: 45px;
-    color: #fff;
     font-size: 20px;
 
-    > a {
+    .fa-search {
         color: #fff;
-        float: right;
-        height: 45px;
-        line-height: 45px;
-        margin-right: 10px;
-        
+        position: absolute;
+        right: 10px;
+        top: 12px;
     }
+
+    .fa-arrow-left {
+        color: #fff;
+        position: absolute;
+        left: 10px;
+        top:12px;
+    }
+
+    > form {
+        padding:0 40px;
+        
+        >input {
+            background-color: #fff;
+            text-align: left;
+            height: 32px;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+
+    
 }
 
 
